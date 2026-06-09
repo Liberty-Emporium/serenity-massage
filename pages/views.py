@@ -35,3 +35,6 @@ def blog(request):
 def blog_post(request, slug):
     post = get_object_or_404(BlogPost, slug=slug, published=True)
     return render(request, 'pages/blog_post.html', {'post': post})
+
+def booking(request):
+    return render(request, 'pages/booking.html')
