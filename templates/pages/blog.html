@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Wellness Blog{% endblock %}
+{% block meta_desc %}Wellness tips, massage therapy benefits, and red light therapy insights from Serenity Therapeutic Massage Wellness in Liberty, NC.{% endblock %}
+
+{% block content %}
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-2">Wellness Tips & Insights</p>
+            <h1 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Blog</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Expert advice on massage therapy, red light therapy, and holistic wellness from Angela and the Serenity team.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Post 1 -->
+            <article class="card group">
+                <div class="h-48 bg-gradient-to-br from-brand-100 to-gold-100 flex items-center justify-center">
+                    <span class="text-5xl">💆</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">Massage Therapy</p>
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-700 transition-colors">5 Benefits of Regular Swedish Massage</h3>
+                    <p class="text-gray-600 text-sm mb-4">Discover how regular Swedish massage can improve your overall health, reduce stress, and enhance your quality of life.</p>
+                    <a href="#" class="text-brand-700 font-semibold text-sm hover:underline">Read More →</a>
+                </div>
+            </article>
+            <!-- Post 2 -->
+            <article class="card group">
+                <div class="h-48 bg-gradient-to-br from-gold-100 to-yellow-100 flex items-center justify-center">
+                    <span class="text-5xl">💡</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">Red Light Therapy</p>
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-700 transition-colors">How Red Light Therapy Boosts Cellular Energy</h3>
+                    <p class="text-gray-600 text-sm mb-4">Learn the science behind red light therapy and how it stimulates your body's natural healing processes at the cellular level.</p>
+                    <a href="#" class="text-brand-700 font-semibold text-sm hover:underline">Read More →</a>
+                </div>
+            </article>
+            <!-- Post 3 -->
+            <article class="card group">
+                <div class="h-48 bg-gradient-to-br from-brand-100 to-brand-200 flex items-center justify-center">
+                    <span class="text-5xl">🧘</span>
+                </div>
+                <div class="p-6">
+                    <p class="text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">Wellness</p>
+                    <h3 class="font-semibold text-lg mb-2 group-hover:text-brand-700 transition-colors">The Connection Between Stress and Muscle Tension</h3>
+                    <p class="text-gray-600 text-sm mb-4">Understanding how chronic stress affects your body and how massage therapy can help break the cycle of tension and pain.</p>
+                    <a href="#" class="text-brand-700 font-semibold text-sm hover:underline">Read More →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

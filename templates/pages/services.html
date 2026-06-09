@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}Services & Pricing{% endblock %}
+{% block meta_desc %}Massage therapy services and pricing at Serenity Therapeutic Massage Wellness in Liberty, NC. Swedish, deep tissue, hot stone, and red light therapy.{% endblock %}
+
+{% block content %}
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-2">What We Offer</p>
+            <h1 class="text-3xl md:text-4xl font-serif font-bold mb-4">Services & Pricing</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Professional massage therapy and wellness services tailored to your needs. All sessions include a personalized consultation.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Swedish -->
+            <div class="card p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl">💆</div>
+                    <h3 class="font-semibold text-xl">Swedish Massage</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">Gentle, relaxing massage using long strokes, kneading, and circular movements. Perfect for stress relief and overall relaxation.</p>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between text-sm"><span>60 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                    <div class="flex justify-between text-sm mt-1"><span>90 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                </div>
+            </div>
+
+            <!-- Deep Tissue -->
+            <div class="card p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl">💪</div>
+                    <h3 class="font-semibold text-xl">Deep Tissue Massage</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">Intensive pressure targeting deeper layers of muscle and connective tissue. Ideal for chronic pain and tension relief.</p>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between text-sm"><span>60 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                    <div class="flex justify-between text-sm mt-1"><span>90 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                </div>
+            </div>
+
+            <!-- Hot Stone -->
+            <div class="card p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center text-2xl">🔥</div>
+                    <h3 class="font-semibold text-xl">Hot Stone Therapy</h3>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">Smooth, heated basalt stones placed on key points while warm oil massage melts away tension and promotes deep relaxation.</p>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between text-sm"><span>60 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                    <div class="flex justify-between text-sm mt-1"><span>90 min</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                </div>
+            </div>
+
+            <!-- Red Light Therapy - Featured -->
+            <div class="card p-6 border-2 border-gold-300 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center text-2xl">💡</div>
+                    <div>
+                        <h3 class="font-semibold text-xl">Red Light Therapy</h3>
+                        <span class="text-xs bg-gold-100 text-gold-700 px-2 py-0.5 rounded-full">Featured</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm mb-4">Trifecta 450 Pro — FDA-approved LED red light therapy for cellular regeneration, inflammation reduction, and natural fat loss support.</p>
+                <ul class="text-sm text-gray-600 space-y-1 mb-4">
+                    <li>✓ 450 LED panels</li>
+                    <li>✓ Zero downtime</li>
+                    <li>✓ Non-invasive treatment</li>
+                </ul>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between text-sm"><span>Per Session</span><span class="font-semibold text-brand-700">Contact for pricing</span></div>
+                </div>
+                <a href="/red-light-therapy/" class="text-brand-700 font-semibold text-sm mt-3 inline-block hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Packages -->
+            <div class="card p-6 md:col-span-2 lg:col-span-2 bg-gradient-to-br from-brand-50 to-gold-50">
+                <h3 class="font-semibold text-xl mb-4">📦 Wellness Packages</h3>
+                <p class="text-gray-600 text-sm mb-4">Save with our bundled session packages. Perfect for ongoing wellness care.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white rounded-xl p-4">
+                        <h4 class="font-semibold">3-Session Package</h4>
+                        <p class="text-sm text-gray-500">Save when you book 3 sessions</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-4">
+                        <h4 class="font-semibold">5-Session Package</h4>
+                        <p class="text-sm text-gray-500">Best value for regular clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
+            <h3 class="font-semibold text-xl mb-2">Ready to Book?</h3>
+            <p class="text-gray-600 mb-4">Contact us directly or book online through our secure booking system.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.massagebook.com" target="_blank" rel="noopener" class="btn-secondary">Book Online</a>
+                <a href="tel:803-287-0064" class="btn-primary">Call for Pricing</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

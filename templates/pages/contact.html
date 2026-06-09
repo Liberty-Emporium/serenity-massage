@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock %}
+{% block meta_desc %}Contact Serenity Therapeutic Massage Wellness in Liberty, NC. Call 803-287-0064 or book your massage therapy session online.{% endblock %}
+
+{% block content %}
+<section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-2">Get In Touch</p>
+            <h1 class="text-3xl md:text-4xl font-serif font-bold mb-4">Contact Us</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Ready to book or have questions? Reach out to us — we'd love to hear from you!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div class="card p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl shrink-0">📍</div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Visit Us</h3>
+                            <p class="text-gray-600 mt-1">128 W Swannanoa Ave<br>Liberty, NC 27298</p>
+                            <a href="https://maps.google.com/?q=128+W+Swannanoa+Ave+Liberty+NC+27298" target="_blank" rel="noopener" class="text-brand-700 font-semibold text-sm mt-2 inline-block hover:underline">Get Directions →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl shrink-0">📞</div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Call Us</h3>
+                            <p class="text-gray-600 mt-1"><a href="tel:803-287-0064" class="text-brand-700 font-semibold text-lg hover:underline">803-287-0064</a></p>
+                            <p class="text-sm text-gray-500 mt-1">Call or text to book your appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-2xl shrink-0">✉️</div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Email Us</h3>
+                            <p class="text-gray-600 mt-1"><a href="mailto:serenitynms87@yahoo.com" class="text-brand-700 font-semibold hover:underline">serenitynms87@yahoo.com</a></p>
+                            <p class="text-sm text-gray-500 mt-1">We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold-50 rounded-xl flex items-center justify-center text-2xl shrink-0">🕐</div>
+                        <div>
+                            <h3 class="font-semibold text-lg">Hours</h3>
+                            <div class="text-gray-600 text-sm mt-1 space-y-1">
+                                <p>Monday - Friday: 9 AM - 6 PM</p>
+                                <p>Saturday: 10 AM - 4 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Embedded Map -->
+            <div class="rounded-2xl overflow-hidden shadow-lg h-96 md:h-full min-h-[400px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.5!2d-80.4294!3d35.8697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDUyJzExLjMiTiA4MMKwMjUnNDUuOCJX!5e0!3m2!1sen!2sus!4v1" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12 text-center">
+            <a href="https://www.massagebook.com" target="_blank" rel="noopener" class="btn-secondary text-lg px-10 py-4">Book Your Session Online</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
