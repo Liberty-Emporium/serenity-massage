@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {# Primary Meta Tags #}
     <title>{% block title %}Serenity Therapeutic Massage Wellness{% endblock %} | Liberty, NC</title>
     <meta name="description" content="{% block meta_desc %}Professional massage therapy and red light therapy in Liberty, NC. Swedish, deep tissue, hot stone, and Trifecta Light™ red light therapy. Book online today!{% endblock %}">
-    <meta name="keywords" content="massage therapy Liberty NC, red light therapy, Swedish massage, deep tissue massage, hot stone therapy, Trifecta Light™, massage therapist near me">
+    <meta name="keywords" content="massage therapy Liberty NC, red light therapy, Swedish massage, deep tissue massage, hot stone therapy, Trifecta Light™, massage therapist near me, lymphatic drainage, cranial sacral therapy">
+    <meta name="author" content="Serenity Therapeutic Massage Wellness">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://serenitytherapeuticspa.com{{ request.path }}">
+    
+    {# Geographic Meta Tags #}
+    <meta name="geo.region" content="US-NC">
+    <meta name="geo.placename" content="Liberty, North Carolina">
+    <meta name="geo.position" content="35.8697;-80.4294">
+    <meta name="ICBM" content="35.8697, -80.4294">
+    
+    {# Open Graph / Facebook #}
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://serenitytherapeuticspa.com{{ request.path }}">
+    <meta property="og:title" content="{% block og_title %}Serenity Therapeutic Massage Wellness{% endblock %} | Liberty, NC">
+    <meta property="og:description" content="{% block og_desc %}Professional massage therapy and red light therapy in Liberty, NC. 4.9★ rated with 431 reviews. Book online!{% endblock %}">
+    <meta property="og:image" content="https://serenitytherapeuticspa.com/static/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Serenity Therapeutic Massage Wellness - Liberty, NC">
+    <meta property="og:site_name" content="Serenity Therapeutic Massage Wellness">
+    <meta property="og:locale" content="en_US">
+    
+    {# Twitter Card #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://serenitytherapeuticspa.com{{ request.path }}">
+    <meta name="twitter:title" content="{% block twitter_title %}Serenity Therapeutic Massage Wellness{% endblock %} | Liberty, NC">
+    <meta name="twitter:description" content="{% block twitter_desc %}Professional massage therapy and red light therapy in Liberty, NC. 4.9★ rated with 431 reviews.{% endblock %}">
+    <meta name="twitter:image" content="https://serenitytherapeuticspa.com/static/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="Serenity Therapeutic Massage Wellness - Liberty, NC">
+    
+    {# Favicon #}
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+    
+    {# Preconnect #}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    {# Tailwind CSS #}
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,6 +63,8 @@
             }
         }
     </script>
+    
+    {# Custom Styles #}
     <style>
         html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
         body { -webkit-overflow-scrolling: touch; }
@@ -37,9 +78,233 @@
         .nav-link { @apply text-gray-700 hover:text-brand-700 font-medium transition-colors duration-200; }
         .nav-link-active { @apply text-brand-700 font-semibold; }
     </style>
+    
+    {# JSON-LD Structured Data - LocalBusiness #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://serenitytherapeuticspa.com",
+        "name": "Serenity Therapeutic Massage Wellness",
+        "alternateName": "Serenity Therapeutic Massage Spa",
+        "description": "Professional massage therapy and red light therapy in Liberty, NC. Clinical massage, lymphatic drainage, cranial sacral therapy, and Trifecta Light™ red light therapy.",
+        "url": "https://serenitytherapeuticspa.com",
+        "telephone": "+1-803-287-0064",
+        "email": "serenitynms87@yahoo.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "128 W Swannanoa Ave",
+            "addressLocality": "Liberty",
+            "addressRegion": "NC",
+            "postalCode": "27298",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.8697,
+            "longitude": -80.4294
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "10:00",
+                "closes": "16:00"
+            }
+        ],
+        "priceRange": "$$",
+        "image": "https://serenitytherapeuticspa.com/static/images/og-image.jpg",
+        "logo": "https://serenitytherapeuticspa.com/static/images/logo.png",
+        "sameAs": [
+            "https://www.massagebook.com/therapists/SerenityTherapeuticMas"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Massage Therapy Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Clinical Massage",
+                        "description": "Customized 60- or 90-minute clinical massage for chronic pain, immune system disorders, muscle/tissue recovery, and arthritis."
+                    },
+                    "price": "120",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Lymphatic Drainage",
+                        "description": "Post-surgical lymphatic drainage therapy specialized in orthopedic, liposuction, and post-mastectomy recovery."
+                    },
+                    "price": "145",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobile Therapeutic Massage",
+                        "description": "Traveling home visit massage for special occasions or when you can't make it to the spa."
+                    },
+                    "price": "75",
+                    "priceCurrency": "USD"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Red Light Therapy",
+                        "description": "Full-body Trifecta Light™ therapy for cellular rejuvenation, skin health, and recovery."
+                    },
+                    "price": "45",
+                    "priceCurrency": "USD"
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.91",
+            "reviewCount": "431",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Alisa C."
+                },
+                "datePublished": "2026-05-01",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Best massage I have ever had!"
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Donna B."
+                },
+                "datePublished": "2026-05-01",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Angela was awesome. She immediately put me at ease. I will be going back. A very Zen atmosphere."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sharon B."
+                },
+                "datePublished": "2026-05-01",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                },
+                "reviewBody": "Exactly what I needed for the last 19 years of chronic pain. Angela, you have a God given gift that has given me miraculous relief."
+            }
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Angela O. Roush",
+            "jobTitle": "Certified Massage Therapist",
+            "description": "AMTA Member, Cranial Sacral Certified, Lymphatic Drainage Certified"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Liberty",
+                "addressRegion": "NC"
+            },
+            {
+                "@type": "State",
+                "name": "North Carolina"
+            }
+        ]
+    }
+    </script>
+    
+    {# FAQ Schema #}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What types of massage therapy do you offer in Liberty, NC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer clinical massage, lymphatic drainage, mobile therapeutic massage, cranial sacral therapy, Swedish massage, deep tissue massage, and red light therapy at our Liberty, NC location inside The Joni Salon House."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does a massage cost at Serenity Therapeutic Massage Spa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our clinical massage is $120 for 90 minutes, lymphatic drainage is $145 for 90 minutes, and mobile therapeutic massage is $75 for 60 minutes. Red light therapy sessions are also available."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where is Serenity Therapeutic Massage Spa located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We are located at 128 W Swannanoa Ave, Liberty, NC 27298, inside The Joni Salon House."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are your hours of operation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We are open Tuesday through Friday 9 AM - 6 PM, Saturday 10 AM - 4 PM, and Sunday & Monday by appointment only."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer red light therapy in Liberty, NC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We offer full-body red light therapy with our Trifecta Light™ system featuring 450 medical-grade LED panels for cellular rejuvenation, skin health, and recovery."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I book an appointment?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can book online at MassageBook or call us directly at 803-287-0064. Walk-ins are also welcome during business hours."
+                }
+            }
+        ]
+    }
+    </script>
+    
     {% block extra_head %}{% endblock %}
 </head>
 <body class="font-sans bg-cream-50 text-gray-800 antialiased">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-brand-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to main content</a>
+    
     <!-- Top Bar -->
     <div class="bg-brand-800 text-white text-sm py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1">
@@ -60,7 +325,7 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 md:h-20">
                 <!-- Logo -->
@@ -104,7 +369,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         {% block content %}{% endblock %}
     </main>
 
@@ -116,6 +381,10 @@
                 <div class="lg:col-span-1">
                     <h3 class="text-2xl font-serif font-bold text-gold-400 mb-3">Serenity</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">Professional massage therapy and wellness services in Liberty, NC. Your journey to relaxation and healing starts here.</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="text-gold-400">★★★★★</span>
+                        <span class="text-sm text-gray-400">4.9/5 — 431 Reviews</span>
+                    </div>
                 </div>
                 <!-- Quick Links -->
                 <div>
